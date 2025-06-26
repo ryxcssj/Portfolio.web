@@ -334,15 +334,20 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form action="https://formspree.io/f/xwpbwjdd" method="POST">
+                        <label>Tú nombre y apellido:
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>Tú email:
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            Tú mensaje:
+                        <textarea name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Enviar</button>
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
