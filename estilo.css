@@ -12,7 +12,9 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: transparent; /* Changed to fully transparent background */
+    background: rgba(30, 35, 38, 0.2); /* Semi-transparent background for better blur effect */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
     position: fixed;
     width: 100%;
     top: 0;
@@ -122,7 +124,6 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
 .sobremi .contenido-seccion p{
     font: 18px;
@@ -177,7 +178,8 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #783F8E;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
@@ -225,7 +227,6 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
 .skills .fila{
     display: flex;
@@ -251,7 +252,7 @@ html{
     position: relative;
     margin-bottom: 30px;
 }
-.skills .skill .progreso{
+.skills .skill .progreso 하면{
     background-color: #783F8E;
     position: absolute;
     top: 0;
@@ -375,7 +376,6 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
 .curriculum .fila{
     display: flex;
@@ -679,7 +679,6 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
     }
-
     .skills .fila{
         display: block;
     }
@@ -689,7 +688,6 @@ footer .arriba{
     .skills .fila .col .barra-skill{
         width: 100%;
     }
-
     .curriculum .fila{
         display: block;
     }
@@ -699,7 +697,6 @@ footer .arriba{
     .curriculum .fila .derecha{
         margin-left: 20px;
     }
-
     .portfolio .galeria{
         display: block;
         width: 100%;
