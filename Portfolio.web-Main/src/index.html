@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">IGGY</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#estudios" onclick="seleccionar()">ESTUDIOS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <div class="theme-switch" id="theme-switch">
+    <i class="fa-solid fa-moon"></i>
+</div>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="https://i.pinimg.com/736x/0f/9b/a8/0f9ba80d909c5fbb07db4c1773353baf.jpg" alt="">
+            </div>
+            <h1>MATÍAS ÁVALOS</h1>
+            <h2>Analista Programador - Experto UI/UX</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy<span> Matías Ávalos.</span> futuro Analista Programador formado en <span>IP Santo Tomás</span>. Mi enfoque se centra en el desarrollo de software robusto y la integración de sistemas mediante IoT.</p>
+
+            <p>A lo largo de mi formación, he perfeccionado el uso de <span>C#, Java, PHP y JavaScript</span>, aplicándolos en proyectos reales como sistemas de comercio electrónico y aplicaciones de gestión de datos. Me especializo en el diseño de bases de datos relacionales y en la creación de soluciones automatizadas utilizando microcontroladores como <span>NodeMCU y Arduino.</span></p>
+
+            <p>Más allá de la programación, soy un apasionado por el <span>Open Source</span> y la personalización de entornos de trabajo, lo que me permite adaptarme rápidamente a nuevas tecnologías y sistemas operativos. Mi meta es seguir creando tecnología que sea tanto funcional como innovadora.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños: </strong>
+                            <p>15-02-2006</p>
+                        </li>
+                        <li>
+                            <strong>Teléfono: </strong>
+                                <p>+56 9 6304 2953</p>
+                        </li>
+                        <li>
+                            <strong>Email: </strong>
+                                <p>avaloscorderomatias@gmail.com</p>
+                        </li>
+                        <li>
+                            <strong>Dirección: </strong>
+                                <p>Pablo Moriamez, Juan Pizarro #197</p>
+                        </li>
+                        <li>
+                            <strong>Estado: </strong>
+                            <p>
+                                En una relación con mi hermosa novia
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Cargo: </strong>
+                                <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <!-- Refleja tu interés en Arduino, NodeMCU y electrónica -->
+                        <div class="interes">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>IOT</span>
+                        </div>
+                        <!-- Refleja tu dominio de Debian, Mint, Kali, etc. -->
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>LINUX / OS</span>
+                        </div>
+                        <!-- Refleja tu capacidad de automatización y scripts -->
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>OPEN SOURCE</span>
+                        </div>
+                        <!-- Refleja tu trabajo con bases de datos como MySQL -->
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>DATA STORAGE</span>
+                        </div>
+                        <!-- Refleja tu uso de herramientas en Kali Linux -->
+                        <div class="interes">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>SECURITY</span>
+                        </div>
+                        <!-- Refleja tu mejora constante en el idioma -->
+                        <div class="interes">
+                            <i class="fa-solid fa-language"></i>
+                            <span>ENGLISH B1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="btn-cv" class="btn-cv">
+                <a href="sources/CV.pdf" download>Descargar CV</a><i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION 'SKILLS' -->
+    <section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <!-- Columna 1: Desarrollo Web y Software (Las duras) -->
+            <div class="col">
+                <h3>Web & Software Development</h3>
+                <div class="skill">
+                    <span>Javascript</span>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                </div>
+                <div class="skill">
+                    <span>Java</span>
+                </div>
+                <div class="skill">
+                    <span>C# (.NET)</span>
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                </div>
+            </div>
+
+            <!-- Columna 2: Especialidades (Bases de Datos, IoT y Mobile) -->
+            <div class="col">
+                <h3>Databases & Specialized Tech</h3>
+                <div class="skill">
+                    <span>SQL (MySQL, MariaDB, SQLite)</span>
+                </div>
+                <div class="skill">
+                    <span>IoT (Arduino, NodeMCU, MQTT)</span>
+                </div>
+                <div class="skill">
+                    <span>Mobile (Flutter, Firebase)</span>
+                </div>
+                <div class="skill">
+                    <span>Linux (Debian, Kali, Mint)</span>
+                </div>
+                <div class="skill">
+                    <span>Proyect Management</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nueva fila opcional si quieres mantener las habilidades blandas separadas -->
+        <div class="fila">
+            <div class="col">
+                <h3>Professional Skills</h3>
+                <div class="skill">
+                    <span>Comunicación</span>
+                </div>
+                <div class="skill">
+                    <span>Trabajo en Equipo</span>
+                </div>
+                <div class="skill">
+                    <span>Creatividad</span>
+                </div>
+                <div class="skill">
+                    <span>Dedicación</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- SECCION ESTUDIOS -->
+    <section id="estudios" class="estudios">
+        <div class="contenido-seccion">
+            <h2>Trayectoria y Proyectos</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación Superior</h3>
+                    <div class="item izq">
+                        <h4>Analista Programador</h4>
+                        <span class="casa">IP Santo Tomás, Ovalle</span>
+                        <span class="fecha">2024 - Presente</span>
+                        <p>Actualmente cursando la carrera, con enfoque en desarrollo de software, gestión de bases de datos y soluciones tecnológicas integrales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Certificación IoT</h4>
+                        <span class="casa">Unidad de Internet de las Cosas</span>
+                        <span class="fecha">2025</span>
+                        <p>Diseño y construcción de un sistema de casillero inteligente utilizando NodeMCU, sensores RFID y comunicación MQTT.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia en Proyectos</h3>
+                    <div class="item der">
+                        <h4>Full Stack Developer - Verde Vital</h4>
+                        <span class="casa">Proyecto Académico</span>
+                        <span class="fecha">2025 (Tercer Semestre)</span>
+                        <p>Desarrollo de un E-commerce con roles de usuario (Admin/Cliente) y sistema de autenticación, enfocado en la gestión de inventario y experiencia de usuario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Backend Developer - Sistema Hirata</h4>
+                        <span class="casa">Optimización de Bases de Datos</span>
+                        <span class="fecha">2026</span>
+                        <p>Diseño y optimización de base de datos relacional en MySQL, implementando triggers y procedimientos almacenados para una empresa de transporte.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Game Developer - Space Invaders</h4>
+                        <span class="casa">Python Project</span>
+                        <span class="fecha">2024 (Primer Semestre)</span>
+                        <p>Recreación del clásico arcade enfocada en la programación orientada a objetos (POO) y manejo de interfaces gráficas en Python.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CERTIFICACIONES -->
+<section id="certificaciones" class="estudios">
+    <div class="contenido-seccion">
+        <h2>Certificaciones</h2>
+        <div class="fila">
+            <!-- Columna Izquierda -->
+            <div class="col izquierda">
+                <div class="item izq">
+                    <h4>Certificado de Especialización</h4>
+                    <span class="casa">Institución Académica</span>
+                    <span class="fecha">2025</span>
+                    <p>Validación de competencias avanzadas en el área de desarrollo de software y análisis de sistemas.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Certificado de Competencias Técnicas</h4>
+                    <span class="casa">IP Santo Tomás</span>
+                    <span class="fecha">2024</span>
+                    <p>Certificación obtenida por el dominio de herramientas de programación y lógica de desarrollo inicial.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha -->
+            <div class="col derecha">
+                <div class="item der">
+                    <h4>Certificación en Bases de Datos</h4>
+                    <span class="casa">Unidad de Especialización</span>
+                    <span class="fecha">2025</span>
+                    <p>Reconocimiento por el diseño, implementación y gestión eficiente de bases de datos relacionales.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Certificación IoT Avanzada</h4>
+                    <span class="casa">Área de Innovación Técnica</span>
+                    <span class="fecha">2025</span>
+                    <p>Acreditación por el desarrollo de soluciones integrales utilizando hardware Arduino y NodeMCU.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Space Invaders</h3>
+                        <p>VideoJuego en Python</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Controlador y buscador de paises</h3>
+                        <p>Proyecto creado y estilizado en Java</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Tienda virtual "Verde Vital"</h3>
+                        <p>Proyecto web con Backend (Node.JS)</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Casillero IoT</h3>
+                        <p>Casillero inteligente creado con tecnología IoT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formspree.io/f/xwpbwjdd" method="POST">
+                        <label>Tú nombre y apellido:
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>Tú email:
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            Tú mensaje:
+                        <textarea name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Dirección: Juan Pizarro #197, Pablo Moriamez
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos:  +56 9 6304 2953
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: avaloscorderomatias@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
