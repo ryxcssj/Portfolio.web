@@ -41,25 +41,33 @@ window.onscroll = function(){
 } 
 
 const themeSwitch = document.getElementById('theme-switch');
+const html = document.documentElement;
 const currentTheme = localStorage.getItem('theme');
 
-// Verificar si hay una preferencia guardada
+// Inicializar el tema al cargar la página
 if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
+    html.setAttribute('data-theme', currentTheme);
     if (currentTheme === 'light') {
         themeSwitch.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else {
+        themeSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>';
     }
+} else {
+    // Si no hay tema guardado, asegurar que esté en dark
+    html.setAttribute('data-theme', 'dark');
+    themeSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>';
 }
 
+// Evento para cambiar de tema
 themeSwitch.addEventListener('click', () => {
-    let theme = document.documentElement.getAttribute('data-theme');
+    let theme = html.getAttribute('data-theme');
     
-    if (theme === 'light') {
-        document.documentElement.setAttribute('data-theme', 'dark');
+    if (theme === 'light' || !theme) {
+        html.setAttribute('data-theme', 'dark');
         themeSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>';
         localStorage.setItem('theme', 'dark');
     } else {
-        document.documentElement.setAttribute('data-theme', 'light');
+        html.setAttribute('data-theme', 'light');
         themeSwitch.innerHTML = '<i class="fa-solid fa-sun"></i>';
         localStorage.setItem('theme', 'light');
     }
